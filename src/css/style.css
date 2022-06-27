@@ -148,9 +148,9 @@ header {
 /* welcome screen end */
 
 /* home */
-/* main.display {
+main.display {
   display: none;
-} */
+}
 
 main.display.display1 {
   display: block;
