@@ -892,11 +892,11 @@ footer p a {
 @media screen and (min-width: 300px) and (max-width: 600px) {
   img.daun1 {
     width: 150px;
-    bottom: -100px;
+    /* bottom: -100px; */
   }
   img.daun2 {
     width: 100px;
-    bottom: -90px;
+    /* bottom: -90px; */
   }
   img.daun3 {
     width: 400px;
