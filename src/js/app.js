@@ -9,7 +9,7 @@ btn_invitation.addEventListener('click', () => {
   gsap.to('.reavel', {
     clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
     duration: 0.5,
-    stagger: 0.8,
+    stagger: 0.6,
   });
   main.classList.add('display1');
   const audio = new Audio('/assets/music/lagu.mp3');

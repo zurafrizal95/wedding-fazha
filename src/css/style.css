@@ -127,6 +127,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -50px;
 }
 
 .welcome_screen .invitation_btn p {
@@ -153,7 +154,7 @@ main.display {
 }
 
 main.display.display1 {
-  display: block;
+  display: inline;
 }
 
 .home {
@@ -891,11 +892,11 @@ footer p a {
 @media screen and (min-width: 300px) and (max-width: 600px) {
   img.daun1 {
     width: 150px;
-    bottom: -70px;
+    bottom: -100px;
   }
   img.daun2 {
     width: 100px;
-    bottom: -60px;
+    bottom: -90px;
   }
   img.daun3 {
     width: 400px;
