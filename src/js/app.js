@@ -1,20 +1,20 @@
-// welcome screen
-const btn_invitation = document.querySelector('.btn_invitation');
-const welcome_screen = document.querySelector('.welcome_screen');
-const animation_bg = document.querySelector('.animation_bg');
-const main = document.querySelector('.display');
-btn_invitation.addEventListener('click', () => {
-  welcome_screen.classList.add('reavel');
-  animation_bg.classList.add('reavel');
-  gsap.to('.reavel', {
-    clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
-    duration: 0.5,
-    stagger: 0.6,
-  });
-  main.classList.add('display1');
-  const audio = new Audio('/assets/music/lagu.mp3');
-  audio.play();
-});
+// // welcome screen
+// const btn_invitation = document.querySelector('.btn_invitation');
+// const welcome_screen = document.querySelector('.welcome_screen');
+// const animation_bg = document.querySelector('.animation_bg');
+// const main = document.querySelector('.display');
+// btn_invitation.addEventListener('click', () => {
+//   welcome_screen.classList.add('reavel');
+//   animation_bg.classList.add('reavel');
+//   gsap.to('.reavel', {
+//     clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+//     duration: 0.5,
+//     stagger: 0.6,
+//   });
+//   main.classList.add('display1');
+//   const audio = new Audio('/assets/music/lagu.mp3');
+//   audio.play();
+// });
 // welcome screen end
 
 // swipper js galery
