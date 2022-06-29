@@ -514,8 +514,8 @@ main.display.display1 {
 .location {
   background-color: var(--bg_color);
   text-align: center;
-  position: relative;
   padding: 30px;
+  width: 100%;
 }
 
 .location .loc_wrap {
@@ -531,15 +531,17 @@ main.display.display1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 50px;
   margin-right: 0;
+  width: 100%;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 500px;
-  width: 100%;
+  width: 500px;
   border-radius: 10px;
   text-align: center;
 }
@@ -1087,7 +1089,7 @@ footer p a {
   .floral {
     width: 350px !important;
   }
-  .mapouter {
+  .gmap_canvas {
     width: 330px;
   }
   .prokes .prokes_icon {
