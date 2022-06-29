@@ -1020,7 +1020,7 @@ footer p a {
   color: var(--text_color);
   font-size: 30px;
   position: absolute;
-  bottom: 30px;
+  bottom: 80px;
   cursor: pointer;
 }
 /* gift box end */
