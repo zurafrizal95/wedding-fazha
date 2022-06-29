@@ -390,6 +390,7 @@ main.display.display1 {
   flex-direction: column;
   background-color: var(--bg_color);
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .special_day ._1_ {
