@@ -123,6 +123,18 @@ function copyText() {
   navigator.clipboard.writeText(sample.textContent);
 }
 
+window.onscroll = function () {
+  func_scroll();
+};
+
+function func_scroll() {
+  if (window.pageYOffset >= 1) {
+    gift.classList.add('on');
+  } else {
+    gift.classList.remove('on');
+  }
+}
+
 gift.addEventListener('click', () => {
   gift_box.classList.toggle('box_on');
 });
