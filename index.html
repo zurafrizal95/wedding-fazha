@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="/assets/icon/notifications-circle-outline.svg" type="image/x-icon" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="welcome_screen">
         <p>The Wedding Of</p>
         <div class="girl_man">
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="animation_bg"></div>
-    </header> -->
+    </header>
 
     <main class="display">
       <!-- home -->
@@ -47,12 +47,30 @@
       <!-- home end -->
 
       <!-- couple -->
-      <section id="couple" class="celebrate">
+      <section id="couple" class="celebrate" style="position: relative">
         <img class="daun3" src="/assets/icon/daunBg.png" alt="" />
         <div class="c_opening_1">
           <p class="_1_" style="z-index: 2">We Invite You To Celebrate Our Wedding</p>
           <p class="_2_">jum'at, 22 juli 2022</p>
           <p class="_3_">SAVE <span>The</span> DATE</p>
+          <div id="countdownd">
+            <div class="timer" data-aos="fade-up" data-aos-duration="500">
+              <p class="hari"></p>
+              <span class="small_text">hari</span>
+            </div>
+            <div class="timer" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+              <p class="jam"></p>
+              <span class="small_text">jam</span>
+            </div>
+            <div class="timer" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+              <p class="menit"></p>
+              <span class="small_text">menit</span>
+            </div>
+            <div class="timer" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+              <p class="detik"></p>
+              <span class="small_text">detik</span>
+            </div>
+          </div>
         </div>
         <div class="c_opening_2">
           <img style="width: 500px; margin-bottom: 10px" class="floral" src="/assets/icon/floral.png" alt="" />
@@ -91,8 +109,60 @@
             <span><ion-icon name="location-outline"></ion-icon>kediaman mempelai wanita</span>
           </p>
         </div>
+        <!-- location -->
+        <div id="location" class="location">
+          <p class="loc_wrap">Location</p>
+          <div class="mapouter">
+            <div class="gmap_canvas" data-aos="fade-up" data-aos-duration="500">
+              <iframe
+                width="500"
+                height="500"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Gg.%20V%2022-2,%20Kesemen,%20Sukorame,&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://123movies-to.org"></a><br /><a href="https://www.embedgooglemap.net">map html code</a>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/place/7%C2%B009'54.6%22S+112%C2%B038'27.6%22E/@-7.1652317,112.6407198,17z/data=!4m5!3m4!1s0x0:0xe5fd215c17d2e5ca!8m2!3d-7.1651678!4d112.6409988?hl=id" target="_blank">Open Map</a>
+          <p class="loc">Gg. V No.22, Kesemen, Sukorame, Kec. Gresik, Kabupaten Gresik, Jawa Timur 61121</p>
+        </div>
+        <!-- location end -->
       </section>
       <!-- event end -->
+
+      <!-- prokes -->
+      <section class="prokes">
+        <img src="/assets/icon/floral.png" style="width: 500px" alt="" />
+        <p class="_1_">Protokol Kesehatan</p>
+        <p class="_2_">
+          Untuk mematuhi himbauan pemerintah dalam penyegahan<br />
+          penyebaran Covig-19, Maka diharapkan Bapak/Ibu/Saudara/i <br />
+          tamu diharapakan untuk:
+        </p>
+        <div class="prokes_icon">
+          <div class="prokes_content" data-aos="fade-up" data-aos-duration="500">
+            <img src="/assets/icon/masker.svg" alt="" />
+            <p>Selalu memakai masker selama acara berlangsung.</p>
+          </div>
+          <div class="prokes_content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <img src="/assets/icon/wash-hand.svg" alt="" />
+            <p>Mencuci tangan sebelum dan sesudah lokasi acara.</p>
+          </div>
+          <div class="prokes_content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="/assets/icon/pycical.svg" alt="" />
+            <p>Tidak berkerumun, dengan menjaga jarak satu sama lain.</p>
+          </div>
+          <div class="prokes_content" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+            <img src="/assets/icon/no-hand.svg" alt="" />
+            <p>Tidak bersalaman, dapat menggantinya dengan salaman jarak jauh.</p>
+          </div>
+        </div>
+      </section>
+      <!-- prokes end -->
 
       <!-- gallery -->
       <section class="gallery">
@@ -156,7 +226,7 @@
     <!-- footer -->
     <footer>
       <p>Copyright <a href="https://www.instagram.com/zur_afrizal/" target="_blank">Zur Affrizal</a> © - All Right Reserved</p>
-      <p class="send_gift"><ion-icon name="gift-outline"></ion-icon></p>
+      <p class="send_gift">Kirim Hadiah</p>
     </footer>
     <!-- footer end -->
 

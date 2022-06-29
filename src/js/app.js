@@ -1,21 +1,54 @@
-// // welcome screen
-// const btn_invitation = document.querySelector('.btn_invitation');
-// const welcome_screen = document.querySelector('.welcome_screen');
-// const animation_bg = document.querySelector('.animation_bg');
-// const main = document.querySelector('.display');
-// btn_invitation.addEventListener('click', () => {
-//   welcome_screen.classList.add('reavel');
-//   animation_bg.classList.add('reavel');
-//   gsap.to('.reavel', {
-//     clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
-//     duration: 0.5,
-//     stagger: 0.6,
-//   });
-//   main.classList.add('display1');
-//   const audio = new Audio('/assets/music/lagu.mp3');
-//   audio.play();
-// });
+// welcome screen
+const btn_invitation = document.querySelector('.btn_invitation');
+const welcome_screen = document.querySelector('.welcome_screen');
+const animation_bg = document.querySelector('.animation_bg');
+const main = document.querySelector('.display');
+btn_invitation.addEventListener('click', () => {
+  welcome_screen.classList.add('reavel');
+  animation_bg.classList.add('reavel');
+  gsap.to('.reavel', {
+    clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+    duration: 0.5,
+    stagger: 0.6,
+  });
+  main.classList.add('display1');
+  const audio = new Audio('/assets/music/lagu.mp3');
+  audio.play();
+});
 // welcome screen end
+
+// cowndont timer
+let countDownDate = new Date('Jul 22, 2022 18:00:00').getTime();
+
+// membuat pembungkus timer
+const count_downd = document.getElementById('countdownd');
+const hari = document.querySelector('.hari');
+const jam = document.querySelector('.jam');
+const menit = document.querySelector('.menit');
+const detik = document.querySelector('.detik');
+
+// Memperbarui hitungan mundur setiap 1 detik
+let x = setInterval(function () {
+  // Untuk mendapatkan tanggal dan waktu hari ini
+  let now = new Date().getTime();
+
+  // Temukan jarak antara sekarang dan tanggal hitung mundur
+  let distance = countDownDate - now;
+
+  // Perhitungan waktu untuk hari, jam, menit dan detik
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Keluarkan hasil dalam elemen dengan id = "demo"
+  // document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+  hari.innerHTML = days;
+  jam.innerHTML = hours;
+  menit.innerHTML = minutes;
+  detik.innerHTML = seconds;
+}, 1000);
+// cowndount timer end
 
 // swipper js galery
 const swiper = new Swiper('.swiper', {

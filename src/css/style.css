@@ -257,12 +257,58 @@ main.display.display1 {
   font-size: 13px;
   font-weight: 600;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .celebrate .c_opening_1 ._3_ span {
   font-size: 12px;
   font-weight: 300;
 }
+
+/* countdowm  */
+#countdownd {
+  width: 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#countdownd .timer {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px 15px 10px;
+  background-color: var(--box_color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 9px 5px var(--shadow_color);
+  border: 1px solid var(--border_color);
+}
+
+#countdownd .timer p {
+  display: inline;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 22px;
+  font-weight: 600;
+  display: inline;
+}
+
+#countdownd .timer p:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+
+#countdownd .timer span {
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+/* countdowm end */
 
 .c_opening_2 {
   display: flex;
@@ -437,7 +483,7 @@ main.display.display1 {
   transform: translate(-50%, -50%);
 }
 
-.celebrate a {
+.location a {
   color: var(--text_color);
   font-size: 18px;
   font-family: 'Quicksand';
@@ -451,18 +497,106 @@ main.display.display1 {
   transition: 0.5s;
 }
 
-.celebrate a:hover {
+.location a:hover {
   background: var(--border_color);
 }
 
-.celebrate .loc {
+.location .loc {
   color: var(--text_color);
   font-family: 'Quicksand';
   font-weight: 600;
   font-size: 13px;
   margin-top: 10px;
 }
+
+/* map */
+.location {
+  background-color: var(--bg_color);
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
+
+.location .loc_wrap {
+  color: var(--text_color);
+  font-family: 'cr';
+  font-size: 30px;
+  display: block;
+}
+
+.mapouter {
+  /* position: relative; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 0;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+/* map end */
 /* celebrate end */
+
+/* prokes */
+.prokes {
+  text-align: center;
+  background-color: var(--bg_color);
+  padding-bottom: 50px;
+}
+
+.prokes ._1_ {
+  color: var(--text_color);
+  font-family: 'cr';
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.prokes ._2_ {
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 13px;
+}
+
+.prokes .prokes_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.prokes .prokes_content {
+  width: 200px;
+  height: 200px;
+  background-color: var(--box_color);
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 2px solid var(--border_color);
+  box-shadow: 0px 0px 9px 5px var(--shadow_color);
+}
+
+.prokes .prokes_content img {
+  width: 100px;
+}
+
+.prokes .prokes_content p {
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 13px;
+}
+/* prokes end */
 
 /* gallery */
 .gallery {
@@ -768,8 +902,6 @@ footer p a {
 }
 
 .send_gift {
-  width: 40px;
-  height: 40px;
   position: fixed;
   bottom: 30px;
   color: var(--text_color);
@@ -779,17 +911,11 @@ footer p a {
   border: 1px solid var(--border_color);
   padding: 3px;
   border-radius: 5px;
-  box-shadow: -1px -3px 50px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 50%;
+  box-shadow: -1px -3px 50px 0px var(--shadow_color);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.send_gift ion-icon {
-  font-size: 25px;
-  /* padding: 10px; */
 }
 /* footer end */
 
@@ -915,6 +1041,7 @@ footer p a {
   }
   img.daun3 {
     width: 400px;
+    top: 70%;
   }
   img.daun4 {
     width: 150px;
@@ -948,6 +1075,15 @@ footer p a {
   }
   .floral {
     width: 350px !important;
+  }
+  .mapouter {
+    width: 330px;
+  }
+  .prokes .prokes_icon {
+    flex-direction: column;
+  }
+  .prokes .prokes_content {
+    margin-top: 20px;
   }
   .gallery {
     padding: 0;
