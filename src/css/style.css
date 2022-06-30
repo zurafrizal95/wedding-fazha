@@ -1264,6 +1264,9 @@ footer p a {
   .floral {
     width: 350px !important;
   }
+  .loc_wrap {
+    margin-left: -10px;
+  }
   .gmap_canvas {
     width: 330px;
   }
