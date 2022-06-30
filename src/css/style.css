@@ -175,9 +175,9 @@ header {
 .welcome_screen p {
   color: var(--text_color);
   font-family: 'Quicksand';
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .welcome_screen .girl_man {
@@ -1197,9 +1197,11 @@ footer p a {
     margin: 0;
   }
   .welcome_screen .girl_man p:nth-child(1) {
+    font-size: 70px;
     margin-left: -20px;
   }
   .welcome_screen .girl_man p:nth-child(3) {
+    font-size: 70px;
     margin-left: -60px;
     margin-top: 0;
   }
