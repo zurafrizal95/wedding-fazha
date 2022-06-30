@@ -21,6 +21,35 @@
   scroll-behavior: smooth;
 }
 
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bg_color);
+  padding: 10px 0;
+  box-shadow: 0px 0px 9px 5px var(--shadow_color);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+nav.on {
+  opacity: 1;
+}
+
+nav img {
+  width: 40px;
+}
+
+nav img.gift_icon {
+  width: 50px;
+  cursor: pointer;
+}
+
 main {
   overflow: hidden;
 }
@@ -1029,8 +1058,14 @@ footer p a {
 .back_top {
   position: fixed;
   z-index: 10;
-  bottom: 10px;
+  bottom: 90px;
   right: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.back_top.on {
+  opacity: 1;
 }
 
 .back_top a {

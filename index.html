@@ -12,9 +12,43 @@
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- vaficon -->
-    <link rel="shortcut icon" href="/assets/icon/notifications-circle-outline.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/icon/logo 1.svg" type="image/x-icon" />
   </head>
   <body>
+    <nav class="navBar">
+      <div class="nav_couple">
+        <a href="#couple"><img src="/assets/icon/couple.svg" alt="" /></a>
+      </div>
+      <div class="nav_event">
+        <a href="#event"><img src="/assets/icon/date.svg" alt="" /></a>
+      </div>
+      <div class="nav_gift">
+        <img class="gift_icon" src="/assets/icon/kado.svg" alt="" />
+        <!-- gif box -->
+        <div class="gift_box">
+          <div class="no_rek">
+            <p class="fazha">Fahmy & Azha</p>
+            <p class="fazha_rek">No Rekening</p>
+            <p class="rekening">
+              BCA - <span class="sample">1501073593</span> (Gusnia Tri Yuniar)<button onclick="copyText()"><ion-icon name="copy-outline"></ion-icon></button>
+            </p>
+            <p class="rekening">
+              BRI - <span class="sample">317201023577535</span> (Fahmy Irwansyah) <button onclick="copyText()"><ion-icon name="copy-outline"></ion-icon></button>
+            </p>
+            <p class="thank">Dan jika memberi adalah tanda kasih Anda, Anda dapat memberi kado secara cashless dengan mengirim amplop digital secara tranfer pada no rekening diatas</p>
+            <span class="close"><ion-icon name="close-circle-outline"></ion-icon></span>
+          </div>
+        </div>
+        <!-- gif box end -->
+      </div>
+      <div class="nav_gallery">
+        <a href="#gallery"><img src="/assets/icon/galerry.svg" alt="" /></a>
+      </div>
+      <div class="nav_wishes">
+        <a href="#comment_form"><img src="/assets/icon/wishes.svg" alt="" /></a>
+      </div>
+    </nav>
+
     <header>
       <div class="welcome_screen">
         <p>The Wedding Of</p>
@@ -164,7 +198,7 @@
       <!-- prokes end -->
 
       <!-- gallery -->
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <img src="/assets/icon/daun.png" alt="" class="daun4" />
         <img src="/assets/icon/daun1.png" alt="" class="daun5" />
         <img style="width: 500px; margin-top: 50px; z-index: 2; position: relative" class="floral" src="/assets/icon/floral.png" alt="" />
@@ -198,7 +232,7 @@
       <!-- gallery end -->
 
       <!-- commet form -->
-      <section class="comment_form">
+      <section id="comment_form" class="comment_form">
         <img style="width: 500px; margin-top: 50px" class="floral" src="/assets/icon/floral.png" alt="" />
         <p class="comment_wrap">Kirim Pesan</p>
         <p class="ucapan">
@@ -225,26 +259,8 @@
     <!-- footer -->
     <footer>
       <p>Copyright <a href="https://www.instagram.com/zur_afrizal/" target="_blank">Zur Affrizal</a> © - All Right Reserved</p>
-      <p class="send_gift">Kirim Hadiah</p>
     </footer>
     <!-- footer end -->
-
-    <!-- gif box -->
-    <div class="gift_box">
-      <div class="no_rek">
-        <p class="fazha">Fahmy & Azha</p>
-        <p class="fazha_rek">No Rekening</p>
-        <p class="rekening">
-          BCA - <span class="sample">1501073593</span> (Gusnia Tri Yuniar)<button onclick="copyText()"><ion-icon name="copy-outline"></ion-icon></button>
-        </p>
-        <p class="rekening">
-          BRI - <span class="sample">317201023577535</span> (Fahmy Irwansyah) <button onclick="copyText()"><ion-icon name="copy-outline"></ion-icon></button>
-        </p>
-        <p class="thank">Dan jika memberi adalah tanda kasih Anda, Anda dapat memberi kado secara cashless dengan mengirim amplop digital secara tranfer pada no rekening diatas</p>
-        <span class="close"><ion-icon name="close-circle-outline"></ion-icon></span>
-      </div>
-    </div>
-    <!-- gif box end -->
 
     <!-- backtop -->
     <div class="back_top">

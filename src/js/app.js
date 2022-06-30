@@ -12,7 +12,7 @@ btn_invitation.addEventListener('click', () => {
     stagger: 0.6,
   });
   main.classList.add('display1');
-  const audio = new Audio('/assets/music/lagu.mp3');
+  const audio = new Audio('/assets/music/music.mp3');
   audio.play();
 });
 // welcome screen end
@@ -115,27 +115,33 @@ db.collection('comments').onSnapshot((snap) => {
 
 // gift box
 const sample = document.querySelector('.sample');
-const gift = document.querySelector('.send_gift');
+const gift_icon = document.querySelector('.gift_icon');
 const gift_box = document.querySelector('.gift_box');
 const close_btn = document.querySelector('.close');
+const back_top = document.querySelector('.back_top');
 function copyText() {
   /* Copy text into clipboard */
   navigator.clipboard.writeText(sample.textContent);
 }
 
+const navBar = document.querySelector('.navBar');
+// function scroll
 window.onscroll = function () {
   func_scroll();
 };
+// function scroll end
 
 function func_scroll() {
   if (window.pageYOffset >= 1) {
-    gift.classList.add('on');
+    navBar.classList.add('on');
+    back_top.classList.add('on');
   } else {
-    gift.classList.remove('on');
+    navBar.classList.remove('on');
+    back_top.classList.remove('on');
   }
 }
 
-gift.addEventListener('click', () => {
+gift_icon.addEventListener('click', () => {
   gift_box.classList.toggle('box_on');
 });
 
