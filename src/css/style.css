@@ -31,7 +31,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: var(--bg_color);
-  padding: 10px 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
   box-shadow: 0px 0px 9px 5px var(--shadow_color);
   transition: 0.5s;
   opacity: 0;
@@ -42,12 +43,91 @@ nav.on {
 }
 
 nav img {
-  width: 40px;
+  width: 35px;
 }
 
 nav img.gift_icon {
-  width: 50px;
+  width: 40px;
   cursor: pointer;
+}
+nav .nav_gift {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+nav .nav_gift::after {
+  content: 'Gift';
+  position: absolute;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 10px;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%, 2px);
+}
+
+nav .nav_couple {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+nav .nav_couple::after {
+  content: 'Couple';
+  position: absolute;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 10px;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 2px);
+}
+
+nav .nav_event {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+nav .nav_event::after {
+  content: 'Event';
+  position: absolute;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 10px;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 2px);
+}
+
+nav .nav_gallery {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+nav .nav_gallery::after {
+  content: 'Gallery';
+  position: absolute;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 10px;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 2px);
+}
+
+nav .nav_wishes {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+nav .nav_wishes::after {
+  content: 'Wishes';
+  position: absolute;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 10px;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 2px);
 }
 
 main {
@@ -282,62 +362,10 @@ main.display.display1 {
   margin-top: 15px;
 }
 
-.celebrate .c_opening_1 ._3_ {
-  font-size: 13px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
 .celebrate .c_opening_1 ._3_ span {
   font-size: 12px;
   font-weight: 300;
 }
-
-/* countdowm  */
-#countdownd {
-  width: 300px;
-  max-width: 400px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-}
-
-#countdownd .timer {
-  width: 50px;
-  height: 50px;
-  padding: 10px 10px 15px 10px;
-  background-color: var(--box_color);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 9px 5px var(--shadow_color);
-  border: 1px solid var(--border_color);
-}
-
-#countdownd .timer p {
-  display: inline;
-  color: var(--text_color);
-  font-family: 'Quicksand';
-  font-size: 22px;
-  font-weight: 600;
-  display: inline;
-}
-
-#countdownd .timer p:not(:nth-child(1)) {
-  margin-left: 20px;
-}
-
-#countdownd .timer span {
-  color: var(--text_color);
-  font-family: 'Quicksand';
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-/* countdowm end */
 
 .c_opening_2 {
   display: flex;
@@ -513,6 +541,65 @@ main.display.display1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.save_the_date {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.save_the_date ._3_ {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'Quicksand';
+  color: var(--text_color);
+}
+
+/* countdowm  */
+#countdownd {
+  width: 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#countdownd .timer {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px 15px 10px;
+  background-color: var(--box_color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 9px 5px var(--shadow_color);
+  border: 1px solid var(--border_color);
+}
+
+#countdownd .timer p {
+  display: inline;
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 22px;
+  font-weight: 600;
+  display: inline;
+}
+
+#countdownd .timer p:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+
+#countdownd .timer span {
+  color: var(--text_color);
+  font-family: 'Quicksand';
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+/* countdowm end */
 
 .location a {
   color: var(--text_color);
