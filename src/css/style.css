@@ -633,6 +633,22 @@ main.display.display1 {
   text-align: center;
   padding: 30px;
   width: 100%;
+  position: relative;
+}
+
+.daun8 {
+  width: 300px;
+  position: absolute;
+  top: -50px;
+  transform: rotateY(-180deg);
+  right: 0;
+}
+
+.daun9 {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  transform: rotateY(-180deg);
 }
 
 .location .loc_wrap {
@@ -1212,12 +1228,19 @@ footer p a {
     top: 90px;
   }
   img.daun5 {
-    width: 150px;
-    top: -50px;
+    width: 100px;
+    top: 30px;
   }
   img.daun6,
   img.daun7 {
     display: none;
+  }
+  img.daun8 {
+    width: 130px;
+    top: 0;
+  }
+  img.daun9 {
+    width: 100px;
   }
   .welcome_screen .girl_man {
     flex-direction: column;
