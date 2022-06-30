@@ -26,7 +26,7 @@ nav {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 20000;
+  z-index: 50;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,7 +167,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 21000;
+  z-index: 100;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   transition: 1s;
 }
