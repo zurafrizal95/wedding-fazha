@@ -826,6 +826,34 @@ main.display.display1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.swiper .swiper-slide.img7 {
+  background: url(/assets/img/7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper .swiper-slide.img8 {
+  background: url(/assets/img/8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper .swiper-slide.img9 {
+  background: url(/assets/img/9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper .swiper-slide.img10 {
+  background: url(/assets/img/10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* gallery end */
 
 /* comment form */
